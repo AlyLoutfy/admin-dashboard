@@ -17,8 +17,57 @@
 
 .header {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.8fr 1fr;
   background-color: white;
+  padding: 0 50px;
+}
+
+.header .top {
+  display: grid;
+  grid-template-columns: 50px 1fr 200px 60px 80px 150px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.header .top img {
+  border-radius: 100px;
+  width: 50px;
+}
+
+.header .top input {
+  border-radius: 25px;
+  border: none;
+  height: 33px;
+  background-color: rgb(239, 239, 239);
+}
+
+.header .bottom {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 70px 300px 1fr repeat(3, 100px);
+  gap: 25px;
+}
+
+.header .bottom img {
+  border-radius: 100px;
+  width: 70px;
+}
+
+.bottom #name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bottom button {
+  /* all: unset; */
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 0px;
+  cursor: pointer;
+  background-color: rgb(4, 111, 164);
+  /* width: 50px; */
 }
 
 .sidebar {
@@ -36,12 +85,14 @@
   margin-left: 20px;
   gap: 25px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .dashboard {
   font-weight: 600;
   font-size: 22px;
   margin-top: 25px;
+  gap: 9px;
 }
 
 .material-symbols-outlined {
@@ -50,6 +101,11 @@
   'wght' 700,
   'GRAD' 200,
   'opsz' 48
+}
+
+.remove-fill {
+  font-variation-settings:
+  'FILL' 0
 }
 
 .content {
